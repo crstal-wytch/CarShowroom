@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://ebfwka.bn1.livefilestore.com/y2psiDtQKmPHdGdfA_ZtRQJXukhKynI4U-vA2mxC4rMIl-MY-sjy9CNat7ljaLLNsY2A3xjCxN3VcWD7oU6dXyad7YOrbiWWR8EM7NsRofv1MM/A5.png?psid=1" alt="Audi A5" title="Audi A5" />
+						<img class = "cloudcarousel" src="https://ebfwka.bn1.livefilestore.com/y2pJAyAi7V0TnVz5OZrUIfUMajFMKYW7-WCe1TwB3hhhJ8HmXyfJnonDT0qaUzorRjHSEoGbtMoCmKg3eglgNY6jxxP5u-ZyAE64qXDnh9clkQ/blue.jpg?psid=1" alt="Audi A5 Blue" title="Audi A5 Blue" />
+						<img class = "cloudcarousel" src="https://ebfwka.bn1.livefilestore.com/y2p8XLFyu_1AeQ3-G6TRmpOlYSrdtvA40eIoq7vyKuIprEYNpu3_sCxSUldKKguiYqqyT8qecuAipy9o6nipvMfsO-ARLLzFJZ8CGQBSyxSY6Y/black.jpg?psid=1" alt="Audi A5 Black" title="Audi A5 Black" />
+						<img class = "cloudcarousel" src="https://ebfwka.bn1.livefilestore.com/y2pTgmz9vf57kD70ZbM73xTbGP30-DuOKPYP8-5h0pFZkAIww_ATTv0KevyTGZSEy4LfhJnKQKB3s2AxyJrFFfh_J3V8tienb-md8x8FRCI_4A/green.jpg?psid=1" alt="Audi A5 Green" title="Audi A5 Green" />
+						<img class = "cloudcarousel" src="https://ebfwka.bn1.livefilestore.com/y2ph1CJ1-Pho0PgVLpztUraj7a4d2s0xIFDDE33wemvg6DZ9wxy6BM0iTXTr5gPy8_JC-Tlz3VKEkqFWymi0X8ek9t59jHye_IatVTk8lPpNH0/red.jpg?psid=1" alt="Audi A5 Red" title="Audi A5 Red" />
+						<img class = "cloudcarousel" src="https://ebfwka.bn1.livefilestore.com/y2plI1gm87vqMGqGJFAlnuaKezvAWrUV5U1jHS6wKc-msrvtpfHAxJsgbX842dDDJpebbA7Ko45-mzGTdpdaNTDTpMeqf1vOqM5nqeSKvebzKo/white.jpg?psid=1" alt="Audi A5 White" title="Audi A5 White" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>Restyled exterior</li>
+								<li>Newly available Audi Connect telematics system</li>
+								<li>Coupe or convertible</li>
+								<li>Turbocharged four-cylinder engine</li>
+								<li>Optional adjustable drivetrain, adaptive suspension</li>
+								<li>Front- or all-wheel drive</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>211-hp, 2.0-liter I-4 (premium)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed manual w/OD</li>
+								<li>8-speed automatic w/OD and auto-manual</li>
+								<li>8-speed CVT w/OD and auto-manual</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Basic - 48 months/50,000 miles</li>
+								<li>Powertrain - 48 months/50,000 miles</li>
+								<li>Maintenance - 12 months/5,000 miles</li>
+								<li>Roadside Assistance Coverage - 48 months/unlimited distance</li>
+								<li>Corrosion Perforation - 144 months/unlimited distance</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>Sweet car</h4>
+							<p>by A5driver from Seattle | June 14, 2013 </p>
+							<p>The fit and finish of this vehicle is second to none. Why can't the yanks figure out quality finishes? I mean 
+							really?? Is it that difficult? I traded a 2010 C6 Corvette for my new Phantom Black A5 manual. That said, it's a
+							tough transition from a 435hp V8 to a 2ltr. The 2ltr is a wonderful plaything but torque disappears after 3rd gear. 
+							My problem: Torque NEVER disappeared with the C6. If you share a similar circumstance, I would check out the S5 first.
+							I should have. But, the A5 is the coolest car ever. As I said, the F&amp;F is the best on earth. I have purchased more 
+							than 20 new cars (maybe 30 or more). The A5 is the best built car I have ever experienced. Quality? Amazing, but 
+							time will tell. MPG has let me down so far. 24 average, mixed. That seems a little low for a 4</p>
+							<p><br /></p>
+							<h4>Fabulous!</h4>
+							<p>by Annual Audi buyer from St. Louis, Mo. | May 29, 2013 </p>
+							<p>This car defies gravity in turns and leaps like a frog off the line while averaging 25 mpg! It is a sophisticated
+							gentleman's car, in the ilk of the 1966 Buick Riviera, the El Dorado, etc. Not many like this,,, High resale value 
+							so I buy one every year...</p>
+							<p><br /></p>
+							<h4>Best car I have driven</h4>
+							<p>by Car Nut from Toronto, ON, CANADA | November 8, 2012 </p>
+							<p>I traded my 2010 Mercedes C250 for a new Audi A5 2.0 Quattro and I am amazed at the way it handles and the
+							compliments I get on the car. It is smooth, powerful, accelerates with ease. I find it very comfortable and the 
+							I love the MMI navigation system. I could not be happier with my choice. The tiptronic gear is amazing allowing 
+							me to shift down when I am cruising to overtake with ease. I was also surprised that the 4 cylinder turbo was so
+							much more powerful than my V6 more fuel efficient and delivered better CO2 emission. Love it!</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
