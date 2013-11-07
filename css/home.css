@@ -1,0 +1,121 @@
+#promo iframe
+{
+	width:800px;
+	height:450px;
+	border:none;
+	margin:10px;
+	float:left;
+}
+
+#s3slider
+{
+	background-color:#000000;
+}
+
+#s3slider ul
+{
+	margin:10px 150px;
+	list-style-type:none;
+}
+
+#s3slider ul li img
+{
+	margin-bottom:10px;
+}
+
+#offers
+{
+	float:left;
+	width:300px;
+	height:450px;
+	border:2px solid #ECECEC;
+	border-radius:3px;
+	margin:10px 30px;
+	-webkit-box-shadow: 2px 2px 3px 1px #333;
+	box-shadow: 2px 2px 3px 1px #333;
+}
+
+#offers h2
+{
+	font-size:32px;
+	font-weight:bold;
+	padding:10px;
+	text-align:center;
+}
+
+#offers hr
+{
+	width:280px;
+	margin-left:10px;
+	border:1px dotted #333333;
+}
+
+#news
+{
+	clear:both;
+	height:200px;
+	width:1140px;
+	margin-left:10px;
+	margin-bottom:10px;
+	border:2px solid #ECECEC;
+	border-radius:3px;
+	-webkit-box-shadow: 2px 2px 3px 1px #333;
+	box-shadow: 2px 2px 3px 1px #333;
+}
+
+#news h2
+{
+	font-size:32px;
+	font-weight:bold;
+	padding:10px;
+	margin-left:20px;
+}
+
+#news hr
+{
+	width:1120px;
+	margin-left:10px;
+	border:1px dotted #333333;
+}
+
+#news ul li,
+#offers ul li
+{
+	list-style-type:disc;
+	margin-left:30px;
+	font-size:18px;
+	line-height:150%;
+}
+
+#news a:link
+{
+	color:#333;
+	text-decoration:none;
+}
+
+#news a:visited
+{
+	color:#99E6FF;
+}
+
+#news a:hover
+{
+	color:#0000FF;
+}
+
+#news1
+{
+	float:left;
+	width:550px
+}
+
+#news2
+{
+	float:right;
+	width:550px;
+}
+
+#news2 ul
+{
+	margin-top:72px;
+}
