@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://ntrgkg.bn1.livefilestore.com/y2pqVKuQpaIPFFafo0mTVGPTVgAJnx1dRD7nMO6cqIsYTqMdgNB5SiIgtaRihJOMkzlm-I5-nOYNiTcEGzWH-Vrt0wTT8LYCfa09NTCOFQRUts/V12Vantage.png?psid=1" alt="Aston Martin V12 Vantage" title="Aston Martin V12 Vantage" />
+						<img class = "cloudcarousel" src="https://ntrgkg.bn1.livefilestore.com/y2p4tDH3Jz4OzfhD37lGWxgcH7b29WFiyARbVb00wncPfwOKVzcIekIeNpefSP0-hjAFw6EKpnqcGFqGdIMwcu1uAdOjKH2_gekiwONWwaiF3g/red.jpg?psid=1" alt="Aston Martin V12 Vantage Red" title="Aston Martin V12 Vantage Red" />
+						<img class = "cloudcarousel" src="https://ntrgkg.bn1.livefilestore.com/y2pbA36JjaqVOhW3WbDJRvxYYFPF7Nmd7fsqsFuvwQ_mqpo1aHiRFqr8j4qMntoNczmf0AuDW-YWsJKzKk0VRpDd_IoQBlluch23Yl6dhP563w/black.jpg?psid=1" alt="Aston Martin V12 Vantage Black" title="Aston Martin V12 Vantage Black" />
+						<img class = "cloudcarousel" src="https://ntrgkg.bn1.livefilestore.com/y2pRYI3qTIhgr8_txt31bG-egP19gOZt_L-6f2kIa6-rAyvm8dwPR68uY8jRGpPVPDPszQbtzBYVFV-FYQRcQBncGgJBeBGliQGNYNtD95pE7o/bronze.jpg?psid=1" alt="Aston Martin V12 Vantage Bronze" title="Aston Martin V12 Vantage Bronze" />
+						<img class = "cloudcarousel" src="https://ntrgkg.bn1.livefilestore.com/y2p0a9O94bU3LndsXWpUwPr5eyjYT4TMYHSwIB_F2TiJNOcr37IrMs56t-wRK4Zcz-gAmr_cpQgIabcoGAKjp84Y-Y3_QZkit38BD-5lkt4C5U/white.jpg?psid=1" alt="Aston Martin V12 Vantage White" title="Aston Martin V12 Vantage White" />
+						<img class = "cloudcarousel" src="https://ntrgkg.bn1.livefilestore.com/y2ppMRczh4ZA5tm7WzYxuuygjfrMh8tTqzcqlhwlRbTqTZI8HU2MK_IIqJG5fDgmVUhkM95HrxWkDeHXVOY7okTwvSRXgxOzA7Sf4EufMckxes/yellow.jpg?psid=1" alt="Aston Martin V12 Vantage Yellow" title="Aston Martin V12 Vantage Yellow" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>510-hp V-12</li>
+								<li>Six-speed manual transmission</li>
+								<li>190 mph top speed</li>
+								<li>Garmin-based navigation system</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>510-hp, 6.0-liter V-12 (premium)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed manual w/OD</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Not available</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>Not Available</h4>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
