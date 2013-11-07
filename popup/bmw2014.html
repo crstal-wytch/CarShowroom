@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://ebhvsw.bn1.livefilestore.com/y2p1M3GcoHELIulYD4FUbAQWuli0qO6vsdb1IR_K4FstvOULNzS1AZcOSMvgX0VaqsgHG25287zF36vbWmmIZwAiWkomwO2v_HjeGWDBYBarfc/X1.png?psid=1" alt="BMW X1" title="BMW X1" />
+						<img class = "cloudcarousel" src="https://ebhvsw.bn1.livefilestore.com/y2pgWgUNVEeV6ZkNn8C7b2MU6A8Bi00droZFDrqiRFVSxcNMU-T06La0BHaRSUDeNYraQDwJGwlI87eVEARP2zsXakQl1i8miMBFFzZQ3EimKc/BMW-X1_1513691c.jpg?psid=1" alt="BMW X1 Blue" title="BMW X1 Blue" />
+						<img class = "cloudcarousel" src="https://ebhvsw.bn1.livefilestore.com/y2p6_4VAviQsRfEJphtJ1GlungB6nezf-TqfWpaHsG9RnwbDeUkUp1nFeMuqkMdYHiXj1fEW4meVflqxZaGnIvFlrxcgDXbWw78RQNOzazF4qg/BMW-X1-image-5_24_2013.jpg?psid=1" alt="BMW X1 Bronze" title="BMW X1 Bronze" />
+						<img class = "cloudcarousel" src="https://ebhvsw.bn1.livefilestore.com/y2pR7FVVV_aRlBuWL6-mML54xVa5hIXBbUIESh3y89ZkLCkESMyL9dan8H-DLXGOQFCjjQfeK-wYpbPEisAh0nc-03_pXFNhfwO6jHqtHWS6uM/bmw-x1-xdrive28i-01.jpg?psid=1" alt="BMW X1 Red" title="BMW X1 Red" />
+						<img class = "cloudcarousel" src="https://ebhvsw.bn1.livefilestore.com/y2pSm_P8GFqiPtvvmVewdwej2PrdfJodzk0hqqjTuo2d024LRijlHm5m-RJ5A24MXn6g2l-PlbAg3ESfPgOIsg3ShhXOCzR9MadjAyZf1yD9wI/bmw-x1-exterior-120.jpg?psid=1" alt="BMW X1 White" title="BMW X1 White" />
+						<img class = "cloudcarousel" src="https://ebhvsw.bn1.livefilestore.com/y2pMkIh3fMyFHRP3VNH1nhAakKTdkG744mFLlWPfmSferkwJtl_BvEgvRIaCM053oA3usHO41uUSsNLxQXBtxyztcepBhyhDKCVr_b-7ifOOC8/yellow.jpg?psid=1" alt="BMW X1 Gold" title="BMW X1 Gold" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>Small crossover with five seats</li>
+								<li>Turbo four-cylinder or six-cylinder engine</li>
+								<li>RWD or AWD</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>240-hp, 2.0-liter I-4 (premium)</li>
+								<li>300-hp, 3.0-liter I-6 (premium)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed automatic w/0D and auto-manual</li>
+								<li>8-speed automatic w/0D and auto-manual</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Basic - 48 months/50,000 miles</li>
+								<li>Powertrain - 48 months/50,000 miles</li>
+								<li>Maintenance - 48 months/50,000 miles</li>
+								<li>Roadside Assistance Coverage - 48 months/unlimited distance</li>
+								<li>Corrosion Perforation - 144 months/unlimited distance</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>BMW X1 first 1,000 miles</h4>
+							<p>by Planenut from Palm Harbor, FL | April 2, 2013 </p>
+							<p>I replaced my 325 ixt wagon with a new X1. The cars have allot 
+							in common and it feels familiar from the first drive. The hardest
+							thing to get used to is the engine shutoff feature when you come to 
+							a stop. It is unnerving, annoying and you must remember to defeat it 
+							at startup by pressing a button as the shutdown feature is the default 
+							setting. My dealer just told me that there is a way for the service department
+							to re-program the car to permanently disable this and I plan on doing that soon.
+							The additional ride height is welcome as a daily driver is exposed to high curbs, 
+							parking stops and entrance aprons that can bottom out most performance cars, yet it does not seem to affect 
+							the handling as the X1 is still much lower with a fairly low CG compared to the larger SUV's.
+							The X1 is still fun to drive, can accelerate surprisingly quickly and can be tossed
+							into corners and keep it's composure. The seating position has more room than the
+							older 3 series and lots of legroom. My criticisms are minor. I miss the separately
+							opening window in the tailgate that the wagon has. I also would like the rear 
+							compartment to extend back a few more inches, after all this is not a car that will be used for heavy 
+							off-road use so exit angle for rough terrain is not really a consideration, so there is no need to 
+							chop the back so short. Also, the roof rails are the new aero styled type that renders all of my 
+							Yakima products obsolete, so it will require buying all new attachments and crossbars for the new 
+							style. Overall, the X1 is a great all around, versatile daily driver. For the BMW purists, you will
+							miss the sound and smoothness of the traditional inline six, but the twin turboed
+							4 works great, just a little raspier, and the 8 speed autobox is really 
+							surprisingly versatile from just cruising to spirited driving, the transmission 
+							reads your mind.</p>
+							<p><br /></p>
+							<h4>Front End Problems</h4>
+							<p>by EA from central Pennsylvania | February 10, 2013 </p>
+							<p>I have been driving for more than 45 years, but luckily have never been in an accident with
+							another vehicle. Until I got my X1 (with the larger of the two engine options), I have never 
+							needed to replace rims on any car I owned, including a 4 previous BMW models. Now I been told
+							I have t replace the two front rims because they are damaged. One was my fault. I ran over a 
+							sloped curb installed as a median on a two lane street and then returned to my lane. It sounded 
+							terrible, and when I inspected the tire, it had a bubble and I replaced it. On the right side, I 
+							went over a common pothole. Now I find the tire on that side has a small bubble and a bent rim. I 
+							think with the larger engine, the shock absorption is totally inadequate on this model. On another 
+							issue, if you drop something like a credit car or keys between either front seat and the center
+							console, good luck getting it out without cutting yourself. The engineers must know the space is tight,
+							so why so many sharp edges when you reach down. I don't expect either of the problems I mentioned with 
+							a $43000 car. The car has great acceleration and wonderful breaking. The steering is responsive and the 
+							car is fun to drive. The xdrive computer system was not designed for use while actually driving.</p>
+							<p><br /></p>
+							<h4>Terrific vehicle</h4>
+							<p>by First BMW from Schererville, IN | January 18, 2013 </p>
+							<p>Very good looking, very comfortable. Lots of bells and whistles. Steers and corners well.
+							heated seats and steering wheel are terrific.</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
