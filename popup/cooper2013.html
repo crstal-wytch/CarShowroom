@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2pk_DpREWTJ_647FobXeUDgLXSbd7PRc2ojTSFv4QKFW6PeTcBJoPDQYLJBu5il4iM0G2tEAQco01npJfXex_J8Q9UEI5ti4CHTOoSpSLgUho/countryman2013.png?psid=1" alt="Mini Cooper Countryman" title="Mini Cooper Countryman" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2pl1W4iyWgRrd5tLkw6Lt5gN6g9g2TrWrcdwEYVzdJTo_FYbNZdhukriusIKL17RzMyycv86EMz3XrUecYPeQFGkLsHwT888cAacKTQdKjOm4/lightblue.jpg?psid=1" alt="Mini Cooper Countryman Blue" title="Mini Cooper Countryman Blue" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2pM0jbQTQK6QB95qgWGVZO8ywl95KIJIweJhmvNkP81IquhepgyyOwnYUt7TO5FcF0utwn6ZOIRlyLGCFcx_8gopB-QIiyH1ab01EqHVAcwPg/red_black.jpg?psid=1" alt="Mini Cooper Countryman Black with Red Stripes" title="Mini Cooper Countryman Black with Red Stripes" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2poGPFEZbdiLB5_wn3gLNkRwn1fPgp8Jbh1PLSviNPJYyMUCQQXJdZ7B3AXf0d2i-Zd0QRXlRR9dK3hiRk1sDdUAxyVTvdolyEEE4BYPtuh80/red.jpg?psid=1" alt="Mini Cooper Countryman Red" title="Mini Cooper Countryman Red" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2ph38U2DfmFsD0xYnP4ckzdZl1OGtkIg9awFg-hIMOObPLwc9mECSDuoZk243NCmnHyYJxF1OjXGxLgv6z7qOpZWb8g2kJWGQ_6Qnhnp0LzF0/white.jpg?psid=1" alt="Mini Cooper Countryman White" title="Mini Cooper Countryman White" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2pDXOMTmi_wLAeVc1rrBBXaxztkdDDNvs036gudlxu7ZXl-uQb8pVLJ9L4t2n104fg4rwPOt8noavmQ4HvMp0hdCPwSpxkglnXiNr0VDy1RIQ/gold.png?psid=1" alt="Mini Cooper Countryman Gold" title="Mini Cooper Countryman Gold" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>Available Mini Yours personalization options</li>
+								<li>About 9 inches longer than Mini Cooper</li>
+								<li>61 percent more cargo room behind backseat than Cooper</li>
+								<li>Third access door</li>
+								<li>Swing-out rear doors</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>181-hp, 1.6-liter I-4 (premium)</li>
+								<li>121-hp, 1.6-liter I-4 (premium)</li>
+								<li>208-hp, 1.6-liter I-4 (premium)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed manual w/OD</li>
+								<li>6-speed automatic w/OD and auto-manual</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Basic - 48 months/50,000 miles</li>
+								<li>Powertrain - 48 months/50,000 miles</li>
+								<li>Maintenance - 36 months/36,000 miles</li>
+								<li>Roadside Assistance Coverage - 48 months/unlimited distance</li>
+								<li>Corrosion Perforation - 144 months/unlimited distance</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>most fun to drive car I've owned</h4>
+							<p>by toolman from Grand Rapids MI | August 10, 2013 </p>
+							<p>Diving for 45 years. Decided to get a "Fun Car". I have a S and it is quick and has more driver leg room 
+							than my GP Pontiac. Fuel economy is very good. Realtime mpg visual helps correct driving habits for maximum mpg.</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
