@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://1qwcwa.bn1.livefilestore.com/y2pDSxs-JYCYf_rcGrcVFKZJ1_V4tih0kTf0JzFhhieaj5Rahz5iqq_-JUc3cAgV0RGr1nPoHPALrgi-z5TpAoPpuLnFkUVErJMiQ2WZm37LNg/tacoma.png?psid=1" alt="Toyota Tacoma" title="Toyota Tacoma" />
+						<img class = "cloudcarousel" src="https://1qwcwa.bn1.livefilestore.com/y2pILiWe-eNv08Z9t0exQNy-amOI9D9nsZb_YtQra4s-Fk__N0BZA3G-N0SKgRJNZt51cIN6h3WGaqKcJqxaOX5yGEdOXEtyhWCQ-lbeIfkjbg/silver.png?psid=1" alt="Toyota Tacoma Silver" title="Toyota Tacoma Silver" />
+						<img class = "cloudcarousel" src="https://1qwcwa.bn1.livefilestore.com/y2pw4FRXqHPOVr0u_xZoUNtalCcCWVVkrXI2lOxffPhhWWLgi1TlFW4xaBZJSNxTmKpSAxB_rB6JT-q3GzdaeFpIIi1uoWLFlU0m5GJZm0I9xk/blue.jpg?psid=1" alt="Toyota Tacoma Blue" title="Toyota Tacoma Blue" />
+						<img class = "cloudcarousel" src="https://1qwcwa.bn1.livefilestore.com/y2pnoWQ9NRQP0C5otCDNIvvJ3d25CSfvORBZacuil3Zr6Oa0VN8mE4erM1nK-9204Z0d2m5JDu0h0vCkh0VWCCaulf6ZsLVhUPaRTtZZI1HVks/green.jpg?psid=1" alt="Toyota Tacoma Green" title="Toyota Tacoma Green" />
+						<img class = "cloudcarousel" src="https://1qwcwa.bn1.livefilestore.com/y2pebNPrYW0Zoz4kqXpeyouy6ktTnZ_z4tT4ZomF4P25tmVxZGtl2EScHAwDdu876cSrZT7Pc0sclmdxZj52WFHuF3i19elXTfEEeK3-pBHXdc/brown.jpg?psid=1" alt="Toyota Tacoma Brown" title="Toyota Tacoma Brown" />
+						<img class = "cloudcarousel" src="https://1qwcwa.bn1.livefilestore.com/y2pbIKlIFyIDWsb4GtETXyIXqH6vNxOy_F8mox4uXU1ubrBunGJ-sjnKzyUjzSdxIioYXzxqBIo3W8m0qvRHQyOJIlIk4NdS0MidC8746uw138/black.jpg?psid=1" alt="Toyota Tacoma Black" title="Toyota Tacoma Black" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>Three cab styles</li>
+								<li>Four-cylinder or V-6</li>
+								<li>Manual or automatic transmission</li>
+								<li>New Limited Package</li>
+								<li>Entune multimedia system</li>
+								<li>T|X and T|X Pro off-road packages</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>236-hp, 4.0-liter V-6 (regular gas)</li>
+								<li>159-hp, 2.7-liter I-4 (regular gas)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed manual w/OD</li>
+								<li>4-speed automatic w/OD</li>
+								<li>5-speed manual w/OD</li>
+								<li>5-speed automatic w/OD</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Basic - 60 months/60,000 miles</li>
+								<li>Powertrain - 60 months/60,000 miles</li>
+								<li>Maintenance - 24 months/25,000 miles</li>
+								<li>Roadside Assistance Coverage - 24 months/25,000 miles</li>
+								<li>Corrosion Perforation - 60 months/unlimited distance</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>great company, great product</h4>
+							<p>by deb the nurse from southern ohio | October 21, 2013 </p>
+							<p>We have driven toyotas for more than 25 years. They are reliable and if they ever do need
+							to be repaired, it is far less often than american cars</p>
+							<p><br /></p>
+							<h4>Tacoma-Still a Winner!</h4>
+							<p>by Sixtyteen from Cedar Hill, TX | September 21, 2013 </p>
+							<p>I replaced a 2012 TRD Tacoma 4x4 with this 2013 model. A few refinements, mostly in the transmission software 
+							(shifts smoother), interior electronics ( enTune) and brakes (more modulated pedal). Rides quieter, also-Toyota 
+							must have added more sound deadening material. Like most years, incremental improvements on a great truck. One
+							gripe - on the TRD pkg, the took the Homelink out of the mirror for some reason. Now I have to go back to
+							using my old push button opener. ;-(</p>
+							<p><br /></p>
+							<h4>Fantastic Truck</h4>
+							<p>by Truck Guy from Columbus, OH | September 16, 2013 </p>
+							<p>I have never owned a Toyota before as I always thought the cost to benefit ratio was not up to my standard. 
+							The dealers never seemed to want to put forth any effort. It was basically here is the vehicle and you should 
+							buy it because it is a Toyota. I was able to find a good deal and dealer this time and had a great experience.
+							The truck is fantastic! I bought a fully loaded Tacoma and love it. The model is the 4x4 four-door with the
+							extended bed so plenty of room for passengers and loads. The back seat is comfortable even for adults and kids 
+							love it. Since the bed is composite instead of metal, I would expect no rust issues like most trucks and it
+							eliminates the need for a bed liner as well. Plenty of tie-downs and the rack system for them is great! I can't
+							speak to reliability yet as I have only owned the truck for a few weeks but it is great so far.</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
