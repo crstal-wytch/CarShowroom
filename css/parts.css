@@ -1,0 +1,95 @@
+
+#department,
+#sales
+{
+	border-radius:10px;
+	border:2px solid #ECECEC;
+	margin:10px;
+	-webkit-box-shadow: 2px 2px 3px 1px #333;
+	box-shadow: 2px 2px 3px 1px #333;
+}
+
+#garage
+{
+	margin:10px;
+}
+
+h2
+{
+	font-weight:bold;
+	font-style:italic;
+	font-size:32px;
+	text-decoration:underline;
+	line-height:150%;
+	margin-left:30px;
+}
+
+#address
+{
+	width:500px;
+	float:left;
+	height:500px;
+}
+
+iframe
+{
+	float:right;
+	padding:10px;
+	width:640px;
+	height:480px;
+	border:none;
+}
+
+#department,
+#parts
+{
+	clear:both;
+}
+
+.left
+{
+	float:left;
+	width:48%;
+}
+
+h6
+{
+	font-weight:bold;
+	font-size:16px;
+	line-height:150%;
+	margin-left:60px;
+}
+
+#address p
+{
+	font-size:14px;
+	line-height:150%;
+	margin-left:60px;
+}
+
+hr
+{
+	margin-left:45px;
+	width:60%;
+}
+
+#department h6,
+#sales h6
+{
+	margin-left:15px;
+	text-decoration:underline;
+	line-height:150%;
+}
+
+table
+{
+	margin:10px;
+}
+
+table td
+{
+	font-size:13px;
+	padding:2px 5px;
+	margin:20px 10px;
+}
+
