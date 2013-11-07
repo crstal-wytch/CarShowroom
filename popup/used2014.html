@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://dd82kq.bn1.livefilestore.com/y2pF5I54UQnA0sgACFg9US-OQN93GJO-04afT0GQHNF122niw6XfrAtKpyiJCLc2WGgMqbznxCjcrnqoQiQ7DxagJy3Zvk2dYRMNPv3qE1yCkY/CT200h.png?psid=1" alt="Lexus CT 200h" title="Lexus CT 200h" />
+						<img class = "cloudcarousel" src="https://dd82kq.bn1.livefilestore.com/y2pZaUXjn915iRpAbuCOjYnFWuvdmlSgYDHHbjNMNt8fWMgpp-Kx6ovIguMP97DdOJGoKCpcNyJVhxfVyBN8xtsrN7RrN8n6qxt7EmVqn5-oZw/Lexus_CT_200h_Geneva.jpg?psid=1" alt="Lexus CT 200h White" title="Lexus CT 200h White" />
+						<img class = "cloudcarousel" src="https://dd82kq.bn1.livefilestore.com/y2p4qqUPfN1dJhJVxh52iIpe6yLdgb8HsCVy3otJojE12XXwttacYfLl8TxZap4qWwXbbJOtsV0lUb3h7u_hmUc1tD_WAk6flUva4tetpuXXWE/2011-Lexus-CT-200h-F-Sport-1.jpg?psid=1" alt="Lexus CT 200h Blue" title="Lexus CT 200h Blue" />
+						<img class = "cloudcarousel" src="https://dd82kq.bn1.livefilestore.com/y2pTwLMEE02ssG_09tALVhcLZ4JBSk_FkrRxb0wMClmlpGycQroWTT7ZZb0G3u6XQynoN_Ls-18mdcvFMg8pqAJEenhpqfukK_SC7O3-KKCn2Y/Lexus-CT-200H-Hybrid-2011-1.jpg?psid=1" alt="Lexus CT 200h Yellow" title="Lexus CT 200h Yellow" />
+						<img class = "cloudcarousel" src="https://dd82kq.bn1.livefilestore.com/y2pvhcTBPOCXBvBUWW0dZljg1UJKjzNUtbzq5_WPhlgoBP2NcGUPmmoYyC4bizgbcLLFTg4qaiMmAu3BbD3FOUg4vmvavBmk3uQVAObwMinpT8/lead1ct200hfr2011.jpg?psid=1" alt="Lexus CT 200h Bronze" title="Lexus CT 200h Bronze" />
+						<img class = "cloudcarousel" src="https://dd82kq.bn1.livefilestore.com/y2pDXm7xrccpCcA-QLBRM5FWl1qPEgmb_5Px9C4W0PUaTz34PyGk0t8P70UC1kwIZpqqsP_FH4ntXKP0VF1oK4qf1GHdOKyBCunJlq-JtrmesU/grey.jpg?psid=1" alt="Lexus CT 200h Grey" title="Lexus CT 200h Grey" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>Standard model discontinued</li>
+								<li>Four-door hatchback</li>
+								<li>Hybrid drivetrain</li>
+								<li>Available collision warning system</li>
+								<li>Seats five</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>98-hp, 1.8-liter I-4 (regular gas)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>2-speed CVT w/OD</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Basic - 48 months/50,000 miles</li>
+								<li>Powertrain - 72 months/70,000 miles</li>
+								<li>Maintenance - 12 months/10,000 miles</li>
+								<li>Roadside Assistance Coverage - 48 months/unlimited distance</li>
+								<li>Corrosion Perforation - 72 months/unlimited distance</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>This is crazy</h4>
+							<p>by Mike D from NJ | September 17, 2013 </p>
+							<p>I stumbled on to this car by accident and I am so glad I did. I am totally amazed at this engineering 
+							masterpiece. This car is smallish and I would not recommend it for a large person. If you are under 
+							5'11" and you want something comfortable, sporty, good looking, reasonably priced and incredibly economical,
+							this is your car. The way this is designed is the perfect blend of engineering and technology. I was concerned 
+							because the reviews I read made this car very sluggish. That is just not so. By no means is this car fast however,
+							it has more than enough power to get out of its own way very nicely. It is very comfortable and the logical ergonomics 
+							combined with Lexus quality is a no brainer. I have been averaging an unbelievable 50mpg. If this is the type of 
+							vehicle you are looking for you would have be a fool not to buy this car.</p>
+							<p><br /></p>
+							<h4>A Great Value!</h4>
+							<p>by Dtnproman from Dallas, TX | July 25, 2013 </p>
+							<p>Great looks. Great gas mileage. Great handling. Great ride. A Great Value! I would buy it all over again.</p>
+							<p><br /></p>
+							<h4>MILEAGE GALORE!</h4>
+							<p>by Lexus Lover from Aiken, SC | July 15, 2013 </p>
+							<p>I read mostly great reviews and finally bought one after months of comparing to the Prius and Ford Cmax. Less 
+							noise and sportier than Pruis. Didnt get all the fancy electronics the C Max had for the same price but that same 
+							week I read that Ford was pulling the electronic systems out as they were not working. I get BETTER than the stated
+							mileage- average around 45-46 and on 1 hour road trips I can get 50 mph. The only complaint is that is is a slow 
+							acceleration and I have to go into regular power mode to get up hills so gas mileage reduces a little bit, but the
+							average is still above stated miles. The Ford people told me it would take 5000 miles for the Ford to understand 
+							how I drive to get the 46-47mpg stated for their vehicle. I tested it and could never get it over 38 mpg.</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
