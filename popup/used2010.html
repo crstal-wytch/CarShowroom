@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://0k7znw.bn1.livefilestore.com/y2pLWVCTPkzIIIqpeHl4oxO0YUjtSn0sjO6HExH3_frEAWO6n2K03thFDiIpfmlsNyIbpjwhkOlwoRAdfPbc40JrDTePBen8qHcBm3a2XqSCWU/grand-caravan.png?psid=1" alt="Dodge Grand Caravan" title="Dodge Grand Caravan" />
+						<img class = "cloudcarousel" src="https://0k7znw.bn1.livefilestore.com/y2p-7cx1LVGuL4R7uL5xPRBumpvXuBtj5oS2AtX28z-uHmL7qoUnNj4u82Wa3VcuLLYcmfdT8WOu2bx5H966IG4Ep2pFEacOgoEJhpWs1tub7c/red.jpg?psid=1" alt="Dodge Grand Caravan Red" title="Dodge Grand Caravan red" />
+						<img class = "cloudcarousel" src="https://0k7znw.bn1.livefilestore.com/y2p5paVov3Dgg5MmEJbFIygyPIua4y-5dLN4wAWy-gP-UYYuHWK_anH3rX6T6X8MJhwEFXvdAO_jZUD-bDbdPjoIP-dBoQKf2x8QiRzyAR7Hok/black.jpg?psid=1" alt="Dodge Grand Caravan Black" title="Dodge Grand Caravan Black" />
+						<img class = "cloudcarousel" src="https://0k7znw.bn1.livefilestore.com/y2p4w8luPcl7LUu0C3XcO_0tZXd_Mt1ZXLKZgt9gx4NxM_NIGhLO8o-J1fN_62ry6N6eKNrEgX0VR0fc9iSwt-P7kfgVk5Dfgn0gRjG0iP6M0Y/brown.jpg?psid=1" alt="Dodge Grand Caravan Brown" title="Dodge Grand Caravan Brown" />
+						<img class = "cloudcarousel" src="https://0k7znw.bn1.livefilestore.com/y2pQtlXrvMrCSXCJx__FzwHv0Hl2TwMCaPeDUrlYv6SxwO04oT11ihCbinSTlP8iB0a2FBK5JJEprJpx328OIlkpA2GXQfTKfLsAtwfc753jeU/white.jpg?psid=1" alt="Dodge Grand Caravan White" title="Dodge Grand Caravan White" />
+						<img class = "cloudcarousel" src="https://0k7znw.bn1.livefilestore.com/y2puZOBWfkk3VzJFPK5eEopBWTbzjFSmODUNil0KrVOc9jpBm_L93zOXXWDJt1XygpFJA-8pW30PR73OQiIBC7vgbQNnSa8pRM3LB3Jl7M3cIk/silver.png?psid=1" alt="Dodge Grand Caravan Silver" title="Dodge Grand Caravan Silver" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>Lower base price for 2013</li>
+								<li>Newly available dual-screen Blu-Ray entertainment system</li>
+								<li>Fold-into-floor second and third rows</li>
+								<li>Seven standard airbags</li>
+								<li>Optional blind spot monitoring system</li>
+								<li>Optional heated steering wheel</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>283-hp, 3.6-liter V-6 (regular gas)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed multi-speed automatic w/OD and auto-manual</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Basic - 36 months/36,000 miles</li>
+								<li>Powertrain - 60 months/100,000 miles</li>
+								<li>Roadside Assistance Coverage - 60 months/100,000 miles</li>
+								<li>Corrosion Perforation - 60 months/100,000 miles</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>ok mini van</h4>
+							<p>by dodge owner from louisiana | September 28, 2013 </p>
+							<p>I am a Dodge fan. My last two cars are from dodge. I bought a 2013 caravan sxt and I am kind of disappointed 
+							with it. I feel it is lacking in many ways. Overall it is a good van for a big family. I will still be buying dodge.</p>
+							<p><br /></p>
+							<h4>Perfect minivan</h4>
+							<p>by Butch from Lake Bridge LA | September 12, 2013 </p>
+							<p>Dodge is a great product when introducing several new cars as we just bought a Charger as a family car. 
+							The minivan has more styling than Honda and Toyota minivans with more stuff as tables like sitting in a kitchen 
+							or RV, backup camera, interior materials are well perfectly too. This is the quietness minivan ever driven and 
+							has lots of acceleration with 33 mpg freeway/highway driving. I love the navigation system and touch screen system
+							with loaded everything inside the audio display system. It handles smooth and second third row seats are best 
+							folding into floor panel for extra cargo room when needed more room i just love our minivan we owned several Dodges 
+							in the past and still buying them now can't go wrong with a Dodge automobile these cars are reliable.</p>
+							<p><br /></p>
+							<h4>Super Hauler</h4>
+							<p>by Taylor from Lake Bridge LA | September 9, 2013 </p>
+							<p>I purchased this minivan for hauling people around as home nurse taking care of several patients and need 
+							enough room for wheelchairs with the third row seating folds flat into the floor and the navigation works 
+							excellent driving across town taking my patients to the doctor, store or etc. I bought it for myself as a 
+							current vehicle too to drive around wherever i be needing to go. The features are perfect and gets 28 mpg 
+							it's comfortable on the ride and love all the automatic things about it's a nice van with loaded out everything.
+							Holds a very great value with the reliability.</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
