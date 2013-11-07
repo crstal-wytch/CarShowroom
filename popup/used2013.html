@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://q8i7vw.bn1.livefilestore.com/y2p9wcA6IqdaGYQIAAyVggFAWoaxLGNw0q59L9vgEDQjY5YHISqbaQK4JPlLdMnmrqfVG31yQQC8fiQmuDWwZO0ynHNPm8_axt__0Kl4O_Uyms/beetle.png?psid=1" alt="Volkswagen Beetle" title="Volkswagen Beetle" />
+						<img class = "cloudcarousel" src="https://q8i7vw.bn1.livefilestore.com/y2pfNB7w_ETj-Wph6wmT_bUh904aBefQ7-c2ZqfADaEEk08q9F4fszIp35Scka-qSJS7dOvk1zZRUGHg5_xwSYCVPLAdznKhSqaZbNvuR26TpQ/beetle.jpg?psid=1" alt="Volkswagen Beetle Blue" title="Volkswagen Beetle Blue" />
+						<img class = "cloudcarousel" src="https://q8i7vw.bn1.livefilestore.com/y2pjoIBUsqQpBaC69NH0c_dG_vG1_CjD-QmdipQDCdJBz-cSrctWWWQ5mfAF5GEgtiTukpb0uoDp9GhLqlvtUVgY7janKVk1JwZyC2Ppt0YlYg/red.jpg?psid=1" alt="Volkswagen Beetle Red" title="Volkswagen Beetle Red" />
+						<img class = "cloudcarousel" src="https://q8i7vw.bn1.livefilestore.com/y2p4ICWXJG5u6TD26c1iyzKT_FAbARV45mie2khIbfnf4bEIRZLVeJj4G3etyCWYqkU_CSscIV_eXEZP3tsAwoOMc6o5FCQkJZYrshpKLCJ2FM/white.jpg?psid=1" alt="Volkswagen Beetle White" title="Volkswagen Beetle White" />
+						<img class = "cloudcarousel" src="https://q8i7vw.bn1.livefilestore.com/y2pCad1R99Qid2oAG6mgFXm0KqRyi1c9LRroVJEaWCS78I8RwgVHQV6255-ZQVJhD1OF7HDcR5okGJWx3MzaUAfStwYwZQKJ11eiwpWvtlaAEE/black.jpg?psid=1" alt="Volkswagen Beetle Black" title="Volkswagen Beetle Black" />
+						<img class = "cloudcarousel" src="https://q8i7vw.bn1.livefilestore.com/y2pRbZmqqXkD9CGFuYU6E3Cqjri9aNrHG_4p_t7jBmA7rQMcc4-IbX_ZdwjTndghhU6porCpERHWYthrE-mbZCrBDd55N_nOMW_tvdUIYSVpIU/brown.jpg?psid=1" alt="Volkswagen Beetle Brown" title="Volkswagen Beetle Brown" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>New convertible model</li>
+								<li>Gas or diesel power</li>
+								<li>Manual or automatic</li>
+								<li>Standard heated leatherette seats</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>200-hp, 2.0-liter I-4 (premium)</li>
+								<li>210-hp, 2.0-liter I-4 (premium)</li>
+								<li>140-hp, 2.0-liter I-4 (diesel)</li>
+								<li>170-hp, 2.5-liter I-5 (regular gas)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed manual w/OD</li>
+								<li>6-speed auto-shift manual w/OD and auto-manual</li>
+								<li>6-speed automatic w/OD and auto-manual</li>
+								<li>5-speed manual w/OD</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Basic - 36 months/36,000 miles</li>
+								<li>Powertrain - 60 months/60,000 miles</li>
+								<li>Maintenance - 36 months/36,000 miles</li>
+								<li>Roadside Assistance Coverage - 36 months/36,000 miles</li>
+								<li>Corrosion Perforation - 144 months/unlimited distance</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>Sweet diesel</h4>
+							<p>by German Car Lover from Edgewood | October 8, 2013 </p>
+							<p>I purchased this car for my wife and we both love it. The TDI has great torque (236 ft/lbs) out of the 2.0L 
+							engine. The diesel is great because it comes with more standard features than the other models to help justify 
+							the TDI's premium to the 2.5L. The turbo model's performance stack, and the body-colored interior trim, to name
+							a couple. Add the Bluetooth, satellite and iPod media and you are loaded to run in a fun and timeless vehicle. 
+							You will also get 300k out of this baby with proper maintenance. The TDIs are hot now and have been for years in
+							Europe. ENJOY!</p>
+							<p><br /></p>
+							<h4>Fuel efficient and sporty</h4>
+							<p>by hot rod designer from Mooresville,NC | October 8, 2013 </p>
+							<p>The 2013 tdi beetle convertible has good low end power with good handling and coupled with the manual six speed 
+							has a sporty feel. Also it is nice to be averaging 45mpg. We are going to use the car for daily transportation and
+							tow behind our motor home. Great little car to throw back the top and enjoy the sights.</p>
+							<p><br /></p>
+							<h4>Fun Car</h4>
+							<p>by Beach Lover from Dayton, OH | September 15, 2013 </p>
+							<p>The Beetle is flat out fun! With the top down I feel ten years younger! My only concern deals with the large
+							blind spots. I feel that VW should have the front license plate holder predrilled for easier installation of 
+							license plates. Of course, I would buy it again if I had to do it over.</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
