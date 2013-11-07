@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+			
+			<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+			<link href="../css/style.css" rel="stylesheet" type="text/css" />
+			<link href="../css/popup.css" rel="stylesheet" type="text/css" />
+			
+			<title>Product Details</title>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+										   
+					// This initialises carousels on the container elements specified, in this case, carousel1.
+					$("#carousel1").CloudCarousel(		
+						{			
+							xPos: 570,
+							yPos: 60,
+							buttonLeft: $("#left-but"),
+							buttonRight: $("#right-but"),
+							altBox: $("#alt-text"),
+							titleBox: $("#title-text")
+						}
+					);
+				});
+				 
+			</script>
+			<script type="text/javascript">
+	
+				function showText(show,hide)
+				{
+					document.getElementById(show).className = "show";
+					document.getElementById(hide).className = "hide";
+				}
+				
+			</script>
+		</head>
+		<body onload="showText('overview')">
+			<div id="wrapper">
+				<header>
+					<img src="http://a0.twimg.com/profile_images/2826000570/47ca3a1613411c6a6881cc4669e01809.png" alt="This is the BMW logo" />
+					<img src="https://1qw5qq.bn1.livefilestore.com/y2pmKrHyE2SV5lbI6tHOsrm0wS710ygIhYm3yDrK3FADtVEkJtFfosvVE-1YnsI2Dl93JZzs2KDHHfmCfvS_p6VXM0lw-S2dufZgMJ5BVKFJmw/mini-cooper-logo.jpg?psid=1" alt="This is the Mini-cooper logo" />
+					<h1>Caprani Motors</h1>
+				</header>
+				<div id="content">
+					<div id = "carousel1">            
+						<!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+						<!-- You can place links around these images -->
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2p_6HWIz_y33f-sDTkmnT675T3W7KR8elHIIK1hmkJlGWYeSsGmR12LS1nBuLOmOXpaHB2QGd8OEPoVop7QLE63rNfJKZPg75RD-KgcPf-7Eo/clubman.png?psid=1" alt="Mini Cooper Clubman" title="Mini Cooper Clubmen" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2puJ26NAkWY0QINM2_69L3lDxVFq264L1QTXolV8JgfETeopLVmCYYmilv2YX3bJJDl5yfBfqgzCQN_xSODZyOTs-lfU4mWwo45-8eH6Km8ks/brightblue.jpg?psid=1" alt="Mini Cooper Clubmen Blue" title="Mini Cooper Clubmen Blue" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2piDgCOpTvMyUszPsWSO9F5O_cXWZZ9R8RaAVzL1l4fTEYjLzS6KnmnPSgTLui_ir5k_v4Lf6Ja7F7Cd6BuIamGfJgWs9v4owgodft7zE8hUo/black_red.jpg?psid=1" alt="Mini Cooper Clubmen Black with Red Stripes" title="Mini Cooper Clubmen Black with Red Stripes" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2pmX3e2ueDbuf-bBRKnmD33M6mALEKXKg56MyZYmmaYgq5mw2QPGlMIBgHS2FUm7-P1r8Qbce1NUQ9g6rVHgRTAYToGIecQXoyN3_ZiJupe1U/brown.jpg?psid=1" alt="Mini Cooper Clubmen Brown" title="Mini Cooper Clubmen Brown" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2pXFSKAKwwZ4WryI2pTtPBotrYOOzafs8yoNqVClm9V5Z0aLPoRE3llaLvPkff_rQUx5lySAcpawY2tGW6LPGWvpb1Mdh4x0bG3HILiqrcrBE/blue.jpg?psid=1" alt="Mini Cooper Clubmen Dark Blue" title="Mini Cooper Clubmen Dark Blue" />
+						<img class = "cloudcarousel" src="https://ddqkvg.bn1.livefilestore.com/y2pSC0dP-6Y_Vpcxv4NlDW5vBj8ra8CMwN6iaYAYGaLGV3IZ68WfU22IeKkslJIfsgnyFHQKDmZyRbHOIZpcmnc5RIqIPqLQBDcKGnV6P3AErQ/black.jpg?psid=1" alt="Mini Cooper Clubmen Black" title="Mini Cooper Clubmen Black" />
+					</div>
+					
+					<!-- Define left and right buttons. -->
+					<input id="left-but"  type="button" value="Previous" />
+					<input id="right-but" type="button" value="Next" />
+				</div>
+				<div id="buttons">
+				<h1>Model Specifications</h1>
+					<a onclick="showText('overview','technical'),showText('overview','customer')" href="javascript:void(0);"><button id="button1" type="button">Overview</button></a>
+					<a onclick="showText('technical','overview'),showText('technical','customer')" href="javascript:void(0);"><button id="button2" type="button">Technical Specs</button></a>
+					<a onclick="showText('customer','technical'),showText('customer','overview')" href="javascript:void(0);"><button id="button3" type="button">Customer Reviews</button></a>
+					<div id="main">
+						<div id="overview" class="hide">
+							<h2>Notable Features</h2>
+							<ul>
+								<li>About 9 inches longer than Mini Cooper hardtop</li>
+								<li>61 percent more cargo room than Cooper hardtop</li>
+								<li>Third access door</li>
+								<li>Swing-out rear doors</li>
+							</ul>
+							<h3>Available Engines:</h3>
+							<ul>
+								<li>181-hp, 1.6-liter I-4 (premium)</li>
+								<li>121-hp, 1.6-liter I-4 (premium)</li>
+								<li>208-hp, 1.6-liter I-4 (premium)</li>
+							</ul>
+							<h3>Transmissions:</h3>
+							<ul>
+								<li>6-speed manual w/OD</li>
+								<li>6-speed automatic w/OD and auto-manual</li>
+							</ul>
+						</div>
+						<div id="technical" class="hide">
+							<h2>Warranty</h2>
+							<ul>
+								<li>Not Available</li>
+							</ul>
+						</div>
+						<div id="customer" class="hide">
+							<h2>Consumer Reviews</h2>
+							<h4>Not Available</h4>
+						</div>
+					</div>
+				</div>
+				<footer>
+					&copy; Caprani Motors
+				</footer>
+			</div>
+		</body>
+	</html>
