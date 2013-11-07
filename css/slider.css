@@ -1,0 +1,46 @@
+
+#s3slider
+{
+    width: 1200px; /* important to be same as image width */
+    height: 320px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+}
+
+#s3sliderContent 
+{
+    width: 1200px; /* important to be same as image width or wider */
+    position: absolute;
+}
+
+.s3sliderImage span 
+{
+    position: absolute;
+    padding: 10px;
+    width: 300px;  /* This is the width of the caption box  */
+	height:300px; /* This is the height of the caption box  */
+    background-color: #006600;  /* This sets the background color of the semi transparent box */
+    /* If you do not want the transparent content field to appear, change all opacity values to 0 */
+	filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:150%;
+    color: #fff; /* This is the color of the text in the caption box */
+    display: none;
+}
+
+.s3sliderImage span strong 
+{ 
+	color:#FF9428;  /* This is the color of the title text in the caption box */
+	font-size: 22px; /* This is the font size of the title text in the caption box */
+	line-height:300%;
+}
+
+.clear 
+{ 
+	clear: both;
+}
+
+
+
+
